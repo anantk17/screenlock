@@ -39,13 +39,15 @@ public class NetworkingSocketsActivity extends Activity {
 	}
 
 	private class HttpGetTask extends AsyncTask<Void, Void, String> {
-
+		
+		//TODO receive HOST ip as input from text field from the user rather than hardcoding it
+		//HOST is your PC ip address
 		private static final String HOST = "192.168.1.50";
 
 		// Get your own user name at http://www.geonames.org/login
 		//private static final String USER_NAME = "aporter";
 		private static final String HTTP_GET_COMMAND = "GET /lock?y=true HTTP/1.1";
-
+		
 		private static final String TAG = "HttpGet";
 
 		@Override
